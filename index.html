@@ -25,7 +25,7 @@
 <h1>SepBIN Details</h1>
 <p>
     This page is used as a supplementary web page for our submission "SepBIN: Binary Feature Separation for Better Semantic Comparison and Authorship Verification".
-    This page contains download links to our experimental data and the additional technical details document, along with the corresponding introductions.
+    This page contains the download links to our experimental data and the additional technical details document, along with the corresponding introductions.
 </p>
 
 <h2>SepBIN Experimental Data</h2>
@@ -62,6 +62,17 @@
         <img src="github_res1.png" width="400"><br>
 
         <h3>Tools for identifying anti-analysis strategies of APT malware samples</h3>
+        When evaluating SepBIN's performance on real-world APT malware homology detection applications,
+        we mainly leverage the mandiant CAPA tool to statistic the malware adversarial strategies.
+        CAPA can effectively identify high-level malware capabilities through a high-quality rule collection
+        constructed by experienced reverse engineering experts. To conduct in-depth investigations,
+        we further consider other automatic malware analysis tools, including ThreatBook Cloud Sandbox,
+        VirusTotal, and Intezer Analyze. Tables II to IV show their analysis results on three malware
+        samples of APT29, Equation, and Darkhotel groups, respectively.
+        Overall, the malware anti-analysis technologies identified by CAPA are more comprehensive,
+        almost covering the identification results of the other three tools.
+        And the results of the latter three tools in turn verify the accuracy and reliability of CAPA.
+        The tools' working mechanisms and detection details are elaborated in the document download link.<br>
         <img src="capa_res_tables.png" width="700">
 
     </p>
