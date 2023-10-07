@@ -46,14 +46,25 @@
 
 <h2>Additional technical information</h2>
     <p>
-        The technical report, with additional information on the dataset and the selected approaches, is available at this
-<a href="https://drive.google.com/file/d/1s6lBk8yJUmRMRRXbgC8gxVoHKnxPew9u/view?usp=sharing.">link</a>.
+        We provide a document with the additional experimental details of SepBIN, which is available at this
+        <a href="https://drive.google.com/file/d/1s6lBk8yJUmRMRRXbgC8gxVoHKnxPew9u/view?usp=sharing.">link</a>.
+        The document mainly contains the following two parts of contents.
+
+        <img src="github_res1.png" width="400"><br>
+        <img src="github_res2.png" width="600"><br>
+
+        <h3>Extended experiments on realistic Github dataset</h3>
+
+        We introduce the Github data source to evaluate SepBIN's performance on realistic datasets more comprehensively. The experimental results are shown in Table I and Figure 1. On the Github dataset, the Precision@1 and Recall@5 metrics reach 85.13% and 75.16%, respectively,
+        outperforming the Siamese-based baseline model by 8.06 and 6.48 points. And when utilizing different proportions of finetuning datasets,
+        SepBIN maintains improvements compared to the baseline model.
+        The gains in Precision@1 and Recall@5 metrics range from 2.14 to 11.13 points. Overall, the extended experiments on the realistic Github dataset further prove that SepBIN's network architecture and pretraining-finetuning mechanism can effectively transfer the feature separation ability, benefiting real-world binary authorship verification applications.
+        The dataset collection process and experimental results are detailed in the document download link.
+
+        <h3>Tools for identifying anti-analysis strategies of APT malware samples</h3>
+        <img src="capa_res_tables.png" width="700">
+
     </p>
-
-    <img src="github_res1.png" width="400"><br>
-    <img src="github_res2.png" width="600"><br>
-    <img src="capa_res_tables.png" width="700">
-
 <p>
 Please address all correspondence concerning this manuscript and the detail information to the email address: songqg@zgclab.edu.cn.
 </p>
