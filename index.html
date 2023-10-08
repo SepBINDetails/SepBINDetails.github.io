@@ -25,8 +25,8 @@
         }
     </style>
 </head>
-<body>
 
+<body>
 <h1>Supporting Material for SepBIN </h1>
 <p>
     This page is used as a supplementary web page for our submission "SepBIN: Binary Feature Separation for Better Semantic Comparison and Authorship Verification".
@@ -97,21 +97,34 @@
         Anti-Debugger (16 rules), Anti-AV (4 rules), Anti-VM (18 rules), Obfuscation (10 rules), Data-encoding (6 rules),
         and Data-encryption (33 rules).</p>
 
+        As an advanced industry malware analysis tool, CAPA has also been widely used in academic research <sup>[5-12]</sup>.
+        Researchers often exploit it to perform malware feature extraction and malware dataset ground-truth annotation.
+        For example, Joren Vrancken <em>et al.</em> <sup>[6]</sup> took CAPA as a strong baseline for their experiments
+        on detecting capabilities in malware binaries. Michael R. Smith <em>et al.</em> <sup>[7]</sup> utilized CAPA as a
+        robust automatic executable labeling tool to provide ground-truth malware behavior labels and assist their malware
+        detection approach. Andre T. Nguyen <em>et al.</em> <sup>[8]</sup> used CAPA as an expensive and accurate malware capability
+        detection tool to provide better results when other cheaper analysis tools perform unsatisfactorily.
+        They also used the rule-matching results of CAPA as the ground-truth for their experimental evaluation.
+        George David <em>et al.</em> <sup>[9]</sup> and Ethan M. Rudd <em>et al.</em> <sup>[10]</sup> leveraged the
+        high-level capability features extracted by CAPA to support malware clustering, detection, and family
+        classification tasks. These previous works demonstrate the accuracy and reliability of the CAPA tool for
+        malware analysis research from diverse perspectives.
+
         <p>To conduct more comprehensive investigations, we further consider other tools to extract the adversarial strategies of the
         APT malware samples, and perform comparative analysis with CAPA. We selected three publicly available malware
         analysis tools provided by security vendors or communities, including <em>ThreatBook Cloud Sandbox</em>,
         <em>VirusTotal</em>, and <em>Intezer Analyze</em>. They support malware capability identification by different
         mechanisms, as follows:</p>
 
-        <p><em>ThreatBook Cloud Sandbox</em> is a Chinese online malware analysis platform.
+        <p><em>ThreatBook Cloud Sandbox</em><sup>[1]</sup> is a Chinese online malware analysis platform.
         It executes malware samples within sandbox environments to extract behavioral data such as API calls,
         network activities, and file operations.</p>
 
-        <p><em>VirusTotal</em> is a well-known security analysis community that amalgamates
+        <p><em>VirusTotal</em><sup>[2]</sup> is a well-known security analysis community that amalgamates
         various antivirus and security scanning engines. It integrates dynamic behavior analysis results of multiple sandbox
-        products and allows users to retrieve analysis reports through the file behavior API.</p>
+        products and allows users to retrieve analysis reports through the file behavior API<sup>[3]</sup>.</p>
 
-        <p><em>Intezer Analyze</em> is a cloud-based Israeli malware scanning and analysis platform.
+        <p><em>Intezer Analyze</em><sup>[4]</sup> is a cloud-based Israeli malware scanning and analysis platform.
         It identifies the vital functionalities of malware through code gene analysis and builds the assembly code into predefined rules covering the MITER ATT&CK framework.</p>
 
         <p>We demonstrate the performance of CAPA and the above tools on our APT malware dataset through specific cases.
@@ -139,14 +152,14 @@
     <li>https://www.virustotal.com</li>
     <li>https://developers.virustotal.com/reference/get-all-behavior-reports-for-a-file</li>
     <li>https://analyze.intezer.com</li>
-    <li>1.Raffa, G., Sgandurra, D., & O’Keeffe, D. (2022, December). Evaluating Anti-Virus Effectiveness in Linux. In 2022 IEEE International Conference on Big Data (Big Data) (pp. 3071-3080). IEEE.</li>
-    <li>2.Vrancken, J., Poll, E., & Verbeek, F. (2022). Detecting Capabilities in Malware Binaries by Searching for Function Calls. Master thesis, Radboud University, 2022.</li>
-    <li>3.Smith, M., Carbajal, A., Domschot, E., Johnson, N. T., Goyal, A., Lamb, C., ... & Zhou, X. (2022). MalGen: Malware Generation with Specific Behaviors to Improve Machine Learning-based Detectors (No. SAND2022-14321). Sandia National Lab.(SNL-NM), Albuquerque, NM (United States); Sandia National Laboratories,, Livermore, CA.</li>
-    <li>4.Nguyen, A. T., Zak, R., Richards, L. E., Fuchs, M., Lu, F., Brandon, R., ... & Holt, J. (2022). Minimizing Compute Costs: When Should We Run More Expensive Malware Analysis?. Conference on Applied Machine Learning in Information Security (CAMLIS).</li>
-    <li>5.George, D., Mauldin, A., Mitchell, J., Mohammed, S., & Slater, R. (2023). Static Malware Family Clustering via Structural and Functional Characteristics. SMU Data Science Review, 7(2), 4.</li>
-    <li>6.Rudd, E. M., Krisiloff, D., Coull, S., Olszewski, D., Raff, E., & Holt, J. (2022). Efficient Malware Analysis Using Metric Embeddings. arXiv preprint arXiv:2212.02663.</li>
+    <li>Raffa, G., Sgandurra, D., & O’Keeffe, D. (2022, December). Evaluating Anti-Virus Effectiveness in Linux. In 2022 IEEE International Conference on Big Data (Big Data) (pp. 3071-3080). IEEE.</li>
+    <li>Vrancken, J., Poll, E., & Verbeek, F. (2022). Detecting Capabilities in Malware Binaries by Searching for Function Calls. Master thesis, Radboud University, 2022.</li>
+    <li>Smith, M., Carbajal, A., Domschot, E., Johnson, N. T., Goyal, A., Lamb, C., ... & Zhou, X. (2022). MalGen: Malware Generation with Specific Behaviors to Improve Machine Learning-based Detectors (No. SAND2022-14321). Sandia National Lab.(SNL-NM), Albuquerque, NM (United States); Sandia National Laboratories,, Livermore, CA.</li>
+    <li>Nguyen, A. T., Zak, R., Richards, L. E., Fuchs, M., Lu, F., Brandon, R., ... & Holt, J. (2022). Minimizing Compute Costs: When Should We Run More Expensive Malware Analysis?. Conference on Applied Machine Learning in Information Security (CAMLIS).</li>
+    <li>George, D., Mauldin, A., Mitchell, J., Mohammed, S., & Slater, R. (2023). Static Malware Family Clustering via Structural and Functional Characteristics. SMU Data Science Review, 7(2), 4.</li>
+    <li>Rudd, E. M., Krisiloff, D., Coull, S., Olszewski, D., Raff, E., & Holt, J. (2022). Efficient Malware Analysis Using Metric Embeddings. arXiv preprint arXiv:2212.02663.</li>
     <li>Schultz, N., & Duby, A. (2022, June). Towards a framework for preprocessing analysis of adversarial windows malware. In 2022 10th International Symposium on Digital Forensics and Security (ISDFS) (pp. 1-6). IEEE.</li>
-    <li>8.Fujii, S., Yamagishi, R., & Yamauchi, T. (2022). Survey and Analysis on ATT&CK Mapping Function of Online Sandbox for Understanding and Efficient Using. Journal of Information Processing, 30, 807-821.</li>
+    <li>Fujii, S., Yamagishi, R., & Yamauchi, T. (2022). Survey and Analysis on ATT&CK Mapping Function of Online Sandbox for Understanding and Efficient Using. Journal of Information Processing, 30, 807-821.</li>
 </ol>
 
 <p>
