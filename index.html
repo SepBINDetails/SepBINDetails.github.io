@@ -27,13 +27,13 @@
 </head>
 <body>
 
-<h1>Supporting Material for <code>SepBIN</code> </h1>
+<h1>Supporting Material for SepBIN </h1>
 <p>
-    This page is used as a supplementary web page for our submission "<code>SepBIN</code>: Binary Feature Separation for Better Semantic Comparison and Authorship Verification".
+    This page is used as a supplementary web page for our submission "SepBIN: Binary Feature Separation for Better Semantic Comparison and Authorship Verification".
     This page contains the download links to our experimental data and the additional technical details document, along with the corresponding introductions.
 </p>
 
-<h2><code>SepBIN</code> Experimental Data</h2>
+<h2>SepBIN Experimental Data</h2>
     <p>The experimental data can be downloaded by this
 <a href="https://drive.google.com/file/d/1pKcHAbJaoSxMkN4DNM-zWXn7E_EdFDpT/view?usp=sharing">link</a>.
     </p>
@@ -47,7 +47,7 @@
 
     <p>The data/Github folder includes processed feature files and ranking pair files for the Github dataset in Section I of our supporting documentation.</p>
 
-<h2><code>SepBIN</code> Additional Details</h2>
+<h2>SepBIN Additional Details</h2>
     <p>
         We provide a document with the additional experimental details of <code>SepBIN</code>, which is available at this
         <a href="https://drive.google.com/file/d/1RYjiFJSOhPJagxWYgAs7r425t5sIVbXp/view?usp=sharing.">link</a>.
@@ -103,15 +103,15 @@
         <em>VirusTotal</em>, and <em>Intezer Analyze</em>. They support malware capability identification by different
         mechanisms, as follows:</p>
 
-        <p><em>ThreatBook Cloud Sandbox</em> <cite>https://s.threatbook.com</cite> is a Chinese online malware analysis platform.
+        <p><em>ThreatBook Cloud Sandbox</em> is a Chinese online malware analysis platform.
         It executes malware samples within sandbox environments to extract behavioral data such as API calls,
         network activities, and file operations.</p>
 
-        <p><em>VirusTotal</em> <cite>https://www.virustotal.com</cite> is a well-known security analysis community that amalgamates
+        <p><em>VirusTotal</em> is a well-known security analysis community that amalgamates
         various antivirus and security scanning engines. It integrates dynamic behavior analysis results of multiple sandbox
-        products and allows users to retrieve analysis reports through the file behavior API <cite>https://developers.virustotal.com/reference/get-all-behavior-reports-for-a-file</cite>.</p>
+        products and allows users to retrieve analysis reports through the file behavior API.</p>
 
-        <p><em>Intezer Analyze</em> <cite>https://analyze.intezer.com</cite> is a cloud-based Israeli malware scanning and analysis platform.
+        <p><em>Intezer Analyze</em> is a cloud-based Israeli malware scanning and analysis platform.
         It identifies the vital functionalities of malware through code gene analysis and builds the assembly code into predefined rules covering the MITER ATT&CK framework.</p>
 
         <p>We demonstrate the performance of CAPA and the above tools on our APT malware dataset through specific cases.
@@ -132,6 +132,23 @@
         perspectives and based on different attributes, their overall conclusions are consistent.
         As <em>Threatbook Cloud Sandbox</em> reveals solid abilities to identify Anti-VM and Anti-Debugger behaviors, we consider
         combining it with CAPA for better exploring the robustness of <code>SepBIN</code> in dealing with highly adversarial real-world malware analysis scenarios.</p>
+
+<h2>References</h2>
+<ol>
+    <li>https://s.threatbook.com</li>
+    <li>https://www.virustotal.com</li>
+    <li>https://developers.virustotal.com/reference/get-all-behavior-reports-for-a-file</li>
+    <li>https://analyze.intezer.com</li>
+    <li>1.Raffa, G., Sgandurra, D., & O’Keeffe, D. (2022, December). Evaluating Anti-Virus Effectiveness in Linux. In 2022 IEEE International Conference on Big Data (Big Data) (pp. 3071-3080). IEEE.</li>
+    <li>2.Vrancken, J., Poll, E., & Verbeek, F. (2022). Detecting Capabilities in Malware Binaries by Searching for Function Calls. Master thesis, Radboud University, 2022.</li>
+    <li>3.Smith, M., Carbajal, A., Domschot, E., Johnson, N. T., Goyal, A., Lamb, C., ... & Zhou, X. (2022). MalGen: Malware Generation with Specific Behaviors to Improve Machine Learning-based Detectors (No. SAND2022-14321). Sandia National Lab.(SNL-NM), Albuquerque, NM (United States); Sandia National Laboratories,, Livermore, CA.</li>
+    <li>4.Nguyen, A. T., Zak, R., Richards, L. E., Fuchs, M., Lu, F., Brandon, R., ... & Holt, J. (2022). Minimizing Compute Costs: When Should We Run More Expensive Malware Analysis?. Conference on Applied Machine Learning in Information Security (CAMLIS).</li>
+    <li>5.George, D., Mauldin, A., Mitchell, J., Mohammed, S., & Slater, R. (2023). Static Malware Family Clustering via Structural and Functional Characteristics. SMU Data Science Review, 7(2), 4.</li>
+    <li>6.Rudd, E. M., Krisiloff, D., Coull, S., Olszewski, D., Raff, E., & Holt, J. (2022). Efficient Malware Analysis Using Metric Embeddings. arXiv preprint arXiv:2212.02663.</li>
+    <li>Schultz, N., & Duby, A. (2022, June). Towards a framework for preprocessing analysis of adversarial windows malware. In 2022 10th International Symposium on Digital Forensics and Security (ISDFS) (pp. 1-6). IEEE.</li>
+    <li>8.Fujii, S., Yamagishi, R., & Yamauchi, T. (2022). Survey and Analysis on ATT&CK Mapping Function of Online Sandbox for Understanding and Efficient Using. Journal of Information Processing, 30, 807-821.</li>
+</ol>
+
 <p>
 Please address correspondence concerning this manuscript and the detail information to the email address: songqg@zgclab.edu.cn.
 </p>
