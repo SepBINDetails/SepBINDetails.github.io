@@ -8,12 +8,16 @@
         body {
             font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
-            line-height: 1.4;
+            line-height: 1.2;
             text-align: left;
-            margin: 40px 20%;
+            margin-left: 1.5in;
+            margin-right: 1.5in;
         }
         h1, h2, h3 {
             font-family: 'Arial Black', Gadget, sans-serif;
+        }
+        p {
+            text-indent: 2em;
         }
         img {
             display: block;
@@ -61,7 +65,7 @@
         and we constructed it as a single-label downstream dataset for the authorship verification task.
         We randomly selected query binaries with 20 associated candidates: 5 positives from the same developer as the query sample,
         and 15 negatives from other developers. In total, our Github dataset comprises 60,000 binary pairs,
-        with 30,000 for finetuning <code>SepBIN</code> and the remaining as the test set.
+        with 30,000 for finetuning <code>SepBIN</code> and the remaining as the test set.<br>
 
         We evaluate the fully finetuned SepBIN and make comparisons with the <em>Siamese</em>-based baseline model on the Github dataset.
         For SepBIN, we also conducted multi-objective pretraining on the GCJC dataset to acquire binary semantic-style separation
@@ -69,7 +73,7 @@
         might have inherent noise during data collection and annotation processes, such as longer source codes with more complex functionalities,
         interference of co-author code fragments on modeling the programming style of  the main contributor, and the reuse of open-source code or
         libraries, SepBIN still demonstrates clear advantages. The Precision@1 and Recall@5 metrics reach 85.13% and 75.16%, respectively,
-        outperforming the baseline model by 8.06 and 6.48 points.
+        outperforming the baseline model by 8.06 and 6.48 points.<br>
 
         The dataset collection process and experimental results are detailed in the document download link.<br><br>
 
@@ -81,7 +85,7 @@
         The gains in Precision@1 and Recall@5 metrics range from 2.14 to 11.13 points. Overall, the extended experiments
         on the realistic Github dataset further prove that <code>SepBIN</code>'s network architecture and pretraining-finetuning
         mechanism can effectively transfer the feature separation ability, benefiting real-world binary authorship
-        verification applications.
+        verification applications.<br>
 
         <img src="github_res1.png" width="400"><br>
 
@@ -93,30 +97,30 @@
         capabilities through a high-quality rule collection constructed by experienced reverse engineering experts.
         It currently includes 832 detection rules, 101 of which are related to adversarial capabilities, including
         Anti-Debugger (16 rules), Anti-AV (4 rules), Anti-VM (18 rules), Obfuscation (10 rules), Data-encoding (6 rules),
-        and Data-encryption (33 rules).
+        and Data-encryption (33 rules).<br>
 
         To conduct more comprehensive investigations, we further consider other tools to extract the adversarial strategies of the
         APT malware samples, and perform comparative analysis with CAPA. We selected three publicly available malware
         analysis tools provided by security vendors or communities, including <em>ThreatBook Cloud Sandbox</em>,
         <em>VirusTotal</em>, and <em>Intezer Analyze</em>. They support malware capability identification by different
-        mechanisms, as follows:
+        mechanisms, as follows:<br>
 
         <em>ThreatBook Cloud Sandbox</em> <cite>https://s.threatbook.com</cite> is a Chinese online malware analysis platform.
         It executes malware samples within sandbox environments to extract behavioral data such as API calls,
-        network activities, and file operations.
+        network activities, and file operations.<br>
 
         <em>VirusTotal</em> <cite>https://www.virustotal.com</cite> is a well-known security analysis community that amalgamates
         various antivirus and security scanning engines. It integrates dynamic behavior analysis results of multiple sandbox
-        products and allows users to retrieve analysis reports through the file behavior API <cite>https://developers.virustotal.com/reference/get-all-behavior-reports-for-a-file</cite>.
+        products and allows users to retrieve analysis reports through the file behavior API <cite>https://developers.virustotal.com/reference/get-all-behavior-reports-for-a-file</cite>.<br>
 
         <em>Intezer Analyze</em> <cite>https://analyze.intezer.com</cite> is a cloud-based Israeli malware scanning and analysis platform.
-        It identifies the vital functionalities of malware through code gene analysis and builds the assembly code into predefined rules covering the MITER ATT&CK framework.
+        It identifies the vital functionalities of malware through code gene analysis and builds the assembly code into predefined rules covering the MITER ATT&CK framework.<br>
 
         We demonstrate the performance of CAPA and the above tools on our APT malware dataset through specific cases.
         Tables II to IV show their analysis results on three  malware samples of APT29, Equation, and Darkhotel groups,
         respectively. The adversarial strategies detected by each tool are signed with check marks, along with the number
         of matched rules or identified behaviors (denoted by Na). Tools that did not identify special anti-analysis-related
-        attributes are omitted in the table.
+        attributes are omitted in the table.<br>
 
         <img src="capa_res_tables.png" width="600"><br>
 
@@ -129,7 +133,7 @@
         from unique raw byte sequences or other related features. Although their detection abilities are constructed from different
         perspectives and based on different attributes, their overall conclusions are consistent.
         As <em>Threatbook Cloud Sandbox</em> reveals solid abilities to identify Anti-VM and Anti-Debugger behaviors, we consider
-        combining it with CAPA for better exploring the robustness of SepBIN in dealing with highly adversarial real-world malware analysis scenarios.
+        combining it with CAPA for better exploring the robustness of SepBIN in dealing with highly adversarial real-world malware analysis scenarios.<br>
 
     </p>
 <p>
