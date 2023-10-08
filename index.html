@@ -32,8 +32,8 @@
 <body>
 <h1>Supporting Material for SepBIN </h1>
 <p>
-    This page is used as a supplementary web page for our manuscript "SepBIN: Binary Feature Separation for Better Semantic Comparison and Authorship Verification", submitted to IEEE Transactions on Information Forensics & Security.
-    The page contains the download link and descriptions of our experimental data, as well as additional technical details.
+    This web page is used as a supplementary web page for our manuscript "SepBIN: Binary Feature Separation for Better Semantic Comparison and Authorship Verification", submitted to IEEE Transactions on Information Forensics & Security.
+    The page contains the download link and descriptions of our experimental data, as well as additional technical details about our dataset and evaluations.
 </p>
 
 <h2>SepBIN Experimental Data</h2>
@@ -46,7 +46,7 @@
         <li>The data/GCJs folder contains processed feature files and ranking pair files for the GCJ-C I, GCJ-C II, GCJ-C++ I, GCJ-C++ II datasets, as described in Section V.A.1.</li>
         <li>The data/obfuscations folder includes processed feature files and ranking pair files for the single and combined obfuscated datasets in Section V.D.1.</li>
         <li>The data/aptmalware folder includes processed feature files and ranking pair files for the APT malware homology detection dataset in Section V.D.2 to V.D.4.</li>
-        <li>The data/Github folder includes processed feature files and ranking pair files for the Github dataset in Section I of our supporting documentation.</li>
+        <li>The data/Github folder includes processed feature files and ranking pair files for the Github dataset in Section B of this web page.</li>
     </ul>
 
 <h2>SepBIN Additional Details</h2>
@@ -65,7 +65,7 @@
         <p>We evaluate the fully finetuned <code>SepBIN</code> and make comparisons with the <em>Siamese</em>-based baseline model on the Github dataset.
         For <code>SepBIN</code>, we also conducted multi-objective pretraining on the GCJC dataset to acquire binary semantic-style separation
         capability. Experimental results are shown in Table I. As can be observed, even though the realistic Github dataset
-        might have inherent noise during data collection and annotation processes, such as longer source codes with more complex functionalities,
+        might have inherent challenges during data collection and annotation processes, such as longer source codes with more complex functionalities,
         interference of co-author code fragments on modeling the programming style of  the main contributor, and the reuse of open-source code or
         libraries, <code>SepBIN</code> still demonstrates clear advantages. The Precision@1 and Recall@5 metrics reach 85.13% and 75.16%, respectively,
         outperforming the baseline model by 8.06 and 6.48 points.</p>
@@ -87,10 +87,10 @@
         <p>Tools for identifying anti-analysis strategies of APT malware samples</h3>
         When evaluating <code>SepBIN</code>'s performance on real-world APT malware homology detection applications, we particularly
         explore its robustness against anti-analysis strategies in Section V.D.3. We mainly leverage the CAPA tool
-        provided by the security vendor <em>mandiant</em> to statistic the adversarial strategies involved in our APT
+        provided by the security vendor <em>Mandiant</em> to statistic the adversarial strategies involved in our APT
         malware samples and construct the experimental dataset. CAPA can effectively identify high-level malware
         capabilities through a high-quality rule collection constructed by experienced reverse engineering experts.
-        It currently includes 832 detection rules, 101 of which are related to adversarial capabilities, including
+        It currently includes 832 detection rules, 87 of which are related to adversarial capabilities, including
         Anti-Debugger (16 rules), Anti-AV (4 rules), Anti-VM (18 rules), Obfuscation (10 rules), Data-encoding (6 rules),
         and Data-encryption (33 rules).</p>
 
@@ -115,7 +115,7 @@
 
         <ul>
             <li><em>ThreatBook Cloud Sandbox </em><sup>[1]</sup> is a Chinese online malware analysis platform.
-        It executes malware samples within sandbox environments to extract behavioral data such as API calls,
+        It executes malware samples within diverse sandbox environments to extract behavioral data such as API calls,
         network activities, and file operations.</li>
             <li><em>VirusTotal</em> <sup>[2]</sup> is a well-known security analysis community that amalgamates
         various antivirus and security scanning engines. It integrates dynamic behavior analysis results of multiple sandbox
