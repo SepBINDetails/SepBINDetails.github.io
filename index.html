@@ -27,13 +27,13 @@
 </head>
 <body>
 
-<h1>Supporting Material for SepBIN </h1>
+<h1>Supporting Material for <code>SepBIN</code> </h1>
 <p>
-    This page is used as a supplementary web page for our submission "SepBIN: Binary Feature Separation for Better Semantic Comparison and Authorship Verification".
+    This page is used as a supplementary web page for our submission "<code>SepBIN</code>: Binary Feature Separation for Better Semantic Comparison and Authorship Verification".
     This page contains the download links to our experimental data and the additional technical details document, along with the corresponding introductions.
 </p>
 
-<h2>SepBIN Experimental Data</h2>
+<h2><code>SepBIN</code> Experimental Data</h2>
     <p>The experimental data can be downloaded by this
 <a href="https://drive.google.com/file/d/1pKcHAbJaoSxMkN4DNM-zWXn7E_EdFDpT/view?usp=sharing">link</a>.
     </p>
@@ -47,9 +47,9 @@
 
     <p>The data/Github folder includes processed feature files and ranking pair files for the Github dataset in Section I of our supporting documentation.</p>
 
-<h2>SepBIN Additional Details</h2>
+<h2><code>SepBIN</code> Additional Details</h2>
     <p>
-        We provide a document with the additional experimental details of SepBIN, which is available at this
+        We provide a document with the additional experimental details of <code>SepBIN</code>, which is available at this
         <a href="https://drive.google.com/file/d/1RYjiFJSOhPJagxWYgAs7r425t5sIVbXp/view?usp=sharing.">link</a>.
         The document mainly contains the following two parts of contents:</p>
 
@@ -65,12 +65,12 @@
         and 15 negatives from other developers. In total, our Github dataset comprises 60,000 binary pairs,
         with 30,000 for finetuning <code>SepBIN</code> and the remaining as the test set.</p>
 
-        <p>We evaluate the fully finetuned SepBIN and make comparisons with the <em>Siamese</em>-based baseline model on the Github dataset.
-        For SepBIN, we also conducted multi-objective pretraining on the GCJC dataset to acquire binary semantic-style separation
+        <p>We evaluate the fully finetuned <code>SepBIN</code> and make comparisons with the <em>Siamese</em>-based baseline model on the Github dataset.
+        For <code>SepBIN</code>, we also conducted multi-objective pretraining on the GCJC dataset to acquire binary semantic-style separation
         capability. Experimental results are shown in Table I. As can be observed, even though the realistic Github dataset
         might have inherent noise during data collection and annotation processes, such as longer source codes with more complex functionalities,
         interference of co-author code fragments on modeling the programming style of  the main contributor, and the reuse of open-source code or
-        libraries, SepBIN still demonstrates clear advantages. The Precision@1 and Recall@5 metrics reach 85.13% and 75.16%, respectively,
+        libraries, <code>SepBIN</code> still demonstrates clear advantages. The Precision@1 and Recall@5 metrics reach 85.13% and 75.16%, respectively,
         outperforming the baseline model by 8.06 and 6.48 points.</p>
 
         The dataset collection process and experimental results are detailed in the document download link.<br><br>
@@ -88,7 +88,7 @@
         <img src="github_res1.png" width="400"><br>
 
         <p>Tools for identifying anti-analysis strategies of APT malware samples</h3>
-        When evaluating SepBIN's performance on real-world APT malware homology detection applications, we particularly
+        When evaluating <code>SepBIN</code>'s performance on real-world APT malware homology detection applications, we particularly
         explore its robustness against anti-analysis strategies in Section V.D.3. We mainly leverage the CAPA tool
         provided by the security vendor <em>mandiant</em> to statistic the adversarial strategies involved in our APT
         malware samples and construct the experimental dataset. CAPA can effectively identify high-level malware
@@ -131,7 +131,7 @@
         from unique raw byte sequences or other related features. Although their detection abilities are constructed from different
         perspectives and based on different attributes, their overall conclusions are consistent.
         As <em>Threatbook Cloud Sandbox</em> reveals solid abilities to identify Anti-VM and Anti-Debugger behaviors, we consider
-        combining it with CAPA for better exploring the robustness of SepBIN in dealing with highly adversarial real-world malware analysis scenarios.</p>
+        combining it with CAPA for better exploring the robustness of <code>SepBIN</code> in dealing with highly adversarial real-world malware analysis scenarios.</p>
 <p>
 Please address correspondence concerning this manuscript and the detail information to the email address: songqg@zgclab.edu.cn.
 </p>
