@@ -143,8 +143,14 @@
         <p>We demonstrate the performance of CAPA and the above tools on our APT malware dataset through specific cases.
         Tables II to IV show their analysis results on three  malware samples of APT29, Equation, and Darkhotel groups,
         respectively. The adversarial strategies detected by each tool are signed with check marks, along with the number
-        of matched rules or identified behaviors (denoted by Na). Tools that did not identify special anti-analysis-related
-        attributes are omitted in the table.</p>
+        of matched rules or identified behaviors (denoted by <em>Na</em>). Tools that did not identify special anti-analysis-related
+        attributes are omitted in the table.
+        Note that CAPA has already been integrated into <em>VirusTotal</em> and <em>Intezer Analyze</em>.
+        For <em>VirusTotal</em>, we filter out the results provided by CAPA and only consider the information
+        from the reports of other sandboxes and antivirus engines. For <em>Intezer Analyze</em>,
+        we report malware anti-analysis capabilities that can be verified through its code gene analysis engine.
+        The detailed evaluation process for each case is as follows:
+        </p>
 
         <img src="capa_res_tables.png" width="600"><br>
 
@@ -156,8 +162,13 @@
         behaviors such as API calls and instruction traces. CAPA completed the corresponding detection based on the rules built
         from unique raw byte sequences or other related features. Although their detection abilities are constructed from different
         perspectives and based on different attributes, their overall conclusions are consistent.
-        As <em>Threatbook Cloud Sandbox</em> reveals solid abilities to identify Anti-VM and Anti-Debugger behaviors, we consider
-        combining it with CAPA for better exploring the robustness of <code>SepBIN</code> in dealing with highly adversarial real-world malware analysis scenarios.</p>
+        Meanwhile, the identification results of <em>VirusTotal</em>'s <em>Zenbox Sandbox</em>
+        on Data-Encoding and Data-Encryption strategies are highly consistent with CAPA.
+        And the code gene analysis component of <em>Intezer Analyze</em> can successfully verify
+        most of the matched CAPA rules on each malware case.
+
+        As <em>Threatbook Cloud Sandbox</em> reveals solid abilities to identify Anti-VM and Anti-Debugger behaviors and generates more related insights,
+        we consider combining it with CAPA for better exploring the robustness of <code>SepBIN</code> in dealing with highly adversarial real-world malware analysis scenarios.</p>
 
 <h2>References</h2>
 <ol class="references-list">
