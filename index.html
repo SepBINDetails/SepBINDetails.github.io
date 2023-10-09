@@ -46,7 +46,7 @@
 </head>
 
 <body>
-<h1>Supplementary Details for SepBIN </h1>
+<h1>Additional Details for SepBIN </h1>
 <p>
     We propose a novel binary analysis framework, <code>SepBIN</code>. It exploits the intrinsic correlation of the binary semantic comparison
     and authorship verification tasks to separate the mixed semantic and stylistic features of binary snippets,
@@ -59,7 +59,6 @@
 <a href="https://drive.google.com/file/d/1H1CFN7d0ZyRaStBnjWEGxoeOFNQJpsQS/view?usp=sharing">https://drive.google.com/file/d/1H1CFN7d0ZyRaStBnjWEGxoeOFNQJpsQS/view?usp=sharing</a>.
     </p>
 
-    <h3>Directory Description</h3>
     <ul>
         <li>The data/GCJs folder contains processed feature files and ranking pair files for the GCJ-C I, GCJ-C II, GCJ-C++ I, GCJ-C++ II datasets, as described in Section V.A.1.</li>
         <li>The data/obfuscations folder includes processed feature files and ranking pair files for the single and combined obfuscated datasets in Section V.D.1.</li>
@@ -67,8 +66,7 @@
         <li>The data/Github folder includes processed feature files and ranking pair files for the Github dataset in Section B of this web page.</li>
     </ul>
 
-<h2>SepBIN Additional Details</h2>
-        <h3>Extended experiments on the realistic Github dataset</h3>
+<h2>Extended experiments on the realistic Github dataset</h2>
 
         <p>We further introduced the Github data source to evaluate <code>SepBIN</code>'s performance on realistic datasets more comprehensively.
         Specifically, we crawled and compiled C-language programs from the top-star Github pages and utilized the <em>git blame</em> command to
@@ -102,7 +100,7 @@
 
         <img src="github_res1.png" width="400"><br>
 
-        <h3>Tools for identifying anti-analysis strategies of APT malware samples</h3>
+<h2>Tools for identifying anti-analysis strategies of APT malware samples</h2>
         When evaluating <code>SepBIN</code>'s performance on real-world APT malware homology detection applications, we particularly
         explore its robustness against anti-analysis strategies in Section V.D.3. We mainly leverage the CAPA tool
         provided by the security vendor <em>Mandiant</em> to statistic the adversarial strategies involved in our APT
